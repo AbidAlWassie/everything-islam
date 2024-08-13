@@ -1,11 +1,11 @@
-import { BottomNav, navItems } from '@/components/ui/BottomNav';
+import { BottomNav } from '@/components/ui/BottomNav';
 
 export default function Home() {
 
   return (
     <main className="flex">
       Home
-      <BottomNav items={navItems} activeIndex={0} />
+      <BottomNav activeIndex={0} />
     </main>
   );
 }

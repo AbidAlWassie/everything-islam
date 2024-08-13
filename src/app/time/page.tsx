@@ -1,10 +1,10 @@
-import { BottomNav, navItems } from '@/components/ui/BottomNav';
+import { BottomNav } from '@/components/ui/BottomNav';
 
 
 const Time = () => {
   return ( 
     <div>Time
-      <BottomNav items={navItems} activeIndex={1} />
+      <BottomNav activeIndex={1} />
     </div>
   )
 }

@@ -9,11 +9,10 @@ interface BottomNavItem {
 }
 
 interface BottomNavProps {
-  items: BottomNavItem[];
   activeIndex: number;
 }
 
-const navItems: BottomNavItem[] = [
+const items: BottomNavItem[] = [
   {
     href: '/',
     label: 'Home',
@@ -34,14 +33,14 @@ const navItems: BottomNavItem[] = [
   },
 ];
 
-const BottomNav: React.FC<BottomNavProps> = ({ items, activeIndex }) => {
+const BottomNav: React.FC<BottomNavProps> = ({ activeIndex }) => {
   return (
     <div className="btm-nav">
       {items.map((item, index) => (
         <Link key={index} href={item.href}>
           <button
-            className={`flex flex-col items-center p-2 w-full ${
-              activeIndex === index ? 'bg-blue-600' : 'bg-gray-800'
+            className={`flex flex-col items-center p-2 w-full border-t-2  ${
+              activeIndex === index ? 'bg-blue-600 border-blue-400 border-t-2' : 'border-transparent bg-gray-800'
             }`}
           >
             {activeIndex === index ? item.iconActive : item.iconInactive}
@@ -53,5 +52,5 @@ const BottomNav: React.FC<BottomNavProps> = ({ items, activeIndex }) => {
   );
 };
 
-export { BottomNav, navItems };
+export { BottomNav };
 

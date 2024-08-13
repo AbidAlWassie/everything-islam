@@ -1,10 +1,10 @@
-import { BottomNav, navItems } from '@/components/ui/BottomNav';
+import { BottomNav } from '@/components/ui/BottomNav';
 
 
 const Quran = () => {
   return ( 
     <div>Quran
-      <BottomNav items={navItems} activeIndex={2} />
+      <BottomNav activeIndex={2} />
     </div>
   )
 }
