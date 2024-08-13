@@ -8,14 +8,15 @@ We will implement these following features eventually.
 
 - Prayer Time based on region.
 - Loading Animations using DaisyUI [Skeleton](https://daisyui.com/components/skeleton/)
-
 - Store data in a json file then fetch tha data.
+- Sign in users using [Auth.js](https://authjs.dev/)
+- Store the user data in a database like postgres, etc. 
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deployment
 
-- I've deployed this project on [Vercel](https://onemandev-course-app.vercel.app/).
+- I've deployed this project on [Vercel](https://everything-islam.vercel.app/).
 - You can clone this repo and try deploying the backend to sites like [xata.io](https://xata.io/), [planetscale.com](https://planetscale.com/), etc.
 
 ## Getting Started
