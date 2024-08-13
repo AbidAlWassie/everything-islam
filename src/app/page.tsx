@@ -1,9 +1,11 @@
-import Image from "next/image";
+import { BottomNav, navItems } from '@/components/ui/BottomNav';
 
 export default function Home() {
+
   return (
     <main className="flex">
-      Hello World
+      Home
+      <BottomNav items={navItems} activeIndex={0} />
     </main>
   );
 }
