@@ -13,7 +13,6 @@ interface BottomNavProps {
   activeIndex: number;
 }
 
-// Navigation items
 const navItems: BottomNavItem[] = [
   {
     href: '/',
@@ -54,6 +53,5 @@ const BottomNav: React.FC<BottomNavProps> = ({ items, activeIndex }) => {
   );
 };
 
-// Export the component and the items
 export { BottomNav, navItems };
 
